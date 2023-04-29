@@ -8,5 +8,5 @@ Página de tributo, fictícia que eu desenvolvi para praticar.
 * CSS3
 * JavaScript
 
-### [Hashirama Senju - Página de Tributo](https://geanbressan.github.io/maratona-discover-01/)
+### [Hashirama Senju - Página de Tributo](https://geanbressan.github.io/Hashirama-Pagina-Tributo/)
 ![Preview do projeto](./assets/images/preview.png)
