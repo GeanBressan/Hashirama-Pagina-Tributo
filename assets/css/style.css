@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("../images/cursor.svg"), auto;
+}
+
+:root {
+    font-size: 62.5%;
+    --black: #202020;
+    --black-alfa: #202020ab;
+    --dark-grey: #2f4f4f;
+    --wood: #deb887;
+    --dark-wood: #c99551;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+::-webkit-scrollbar {
+    width: 4px;
+    background: var(--dark-wood);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--dark-wood);
+}
+
+body {
+    position: relative;
+    font-size: 1.6rem;
+    font-family: 'Cabin', sans-serif;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--black);
+}
+
+a, span {
+    color: var(--dark-grey);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+main {
+    width: 60%;
+    background-color: var(--wood);
+    margin: 4rem auto 2rem auto;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    margin-bottom: 3rem;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.about img {
+    width: 20rem;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.about p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.time-line cite {
+    display: inline-block;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--dark-grey);
+}
+
+.time-line-box {
+    border-left: .2rem solid var(--black);
+    padding-left: 1rem;
+}
+
+.time-line-box h2 {
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.time-line-box h2::before {
+    content: "";
+    width: .8rem;
+    height: .8rem;
+    background-color: var(--black);
+    border-radius: 100%;
+    position: absolute;
+    top: .8rem;
+    left: -1.5rem;
+}
+
+.time-line-box p  {
+    background-color: var(--dark-wood);
+    margin-block: 1rem;
+    padding: .8rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.gallery {
+    margin: 4rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.gallery-picture {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: all 400ms;
+    box-shadow: .1rem .1rem 1rem .1rem var(--black);
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.gallery-picture:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.gallery-show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-alfa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-gallery-show {
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: var(--black);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    align-self: flex-end;
+    margin: 2rem 2rem 0;
+    cursor: pointer;
+}
+
+.gallery-show img {
+     width: 30rem;
+     height: 40rem;
+     border-radius: 1.6rem;
+     position: absolute;
+     top: 10rem;
+     object-fit: contain;
+     background-color: var(--black);
+}
+
+.ds-none {
+    display: none;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto 1rem auto;
+    background-color: var(--wood);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+@media (max-width: 1281px) {
+    main {
+        width: 65%;
+    }
+    footer {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1025px) {
+    main {
+        width: 75%;
+    }
+    footer {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 801px) {
+    main {
+        width: 85%;
+    }
+    footer {
+        width: 85%;
+    }
+}
+
+@media (max-width: 680px) {
+    .about {
+        flex-wrap: wrap;
+    }
+    .gallery-picture {
+        width: 8rem;
+        height: 8rem;
+        box-shadow: none;
+        border-radius: .8rem;
+    }
+    .gallery-picture:hover {
+        transform: none;
+    }
+}
+
+@media (max-width:480px) {
+    main {
+        width: 95%;
+    }
+    footer {
+        width: 95%;
+    }
+}
