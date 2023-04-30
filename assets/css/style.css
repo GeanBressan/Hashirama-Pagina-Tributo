@@ -40,6 +40,10 @@ a, span {
     color: var(--dark-grey);
 }
 
+a {
+    cursor: pointer;
+}
+
 h1 {
     font-size: 3rem;
     line-height: 4rem;
